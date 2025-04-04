@@ -1,0 +1,16 @@
+3p. În cadrul unei aplicații de simulare a unei cafenele, se dorește implementarea unui modul care să gestioneze comenzile de la clienți. În această cafenea există o singură mașină de cafea care poate prepara băuturile comandate. Pentru a evita conflictele între comenzi și pentru a coordona eficient prepararea băuturilor, este necesar ca toate comenzile să treacă prin aceeași instanță a clasei CoffeeMachine.
+
+Mașina de cafea poate prepara doar un singur tip de băutură la un moment dat, iar fiecare băutură are un timp de preparare și un nivel de temperatură ideal.
+
+Să se implementeze această funcționalitate utilizând design pattern-ul Singleton, astfel încât să existe o singură instanță de CoffeeMachine în toată aplicația.
+
+
+1p. Să se testeze soluția prin simularea a patru comenzi diferite (ex: espresso, latte, cappuccino, ceai), trimise pe rând către CoffeeMachine. Să se afișeze în consolă băutura care se prepară și timpul aferent. Se va demonstra că toate comenzile sunt procesate de aceeași instanță de mașină.
+
+
+4p. După o perioadă, cafeneaua devine tot mai populară și achiziționează încă două mașini de cafea pentru a reduce timpul de așteptare. Se dorește implementarea unei versiuni extinse a aplicației, în care să existe maximum 3 instanțe de CoffeeMachine, fiecare cu propriul ID.
+
+Să se utilizeze un Singleton Registry, care permite gestionarea celor 3 mașini și care returnează o mașină existentă sau creează una nouă (dacă limita nu a fost atinsă). Fiecare băutură trebuie trimisă către o mașină disponibilă în funcție de temperatură și timp de preparare (simulare logică simplă).
+
+
+2p. Să se testeze noua versiune prin trimiterea a 6 comenzi și afișarea modului în care acestea au fost repartizate între cele 3 mașini disponibile. Să se afișeze comenzile procesate de fiecare instanță a CoffeeMachine.

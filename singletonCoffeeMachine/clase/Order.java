@@ -5,7 +5,7 @@ public class Order {
     private int prepTime;
     private float prepTemperature;
 
-    private Order(String name, int prepTime, float prepTemperature) {
+    public Order(String name, int prepTime, float prepTemperature) {
         this.name = name;
         this.prepTime = prepTime;
         this.prepTemperature = prepTemperature;
